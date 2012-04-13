@@ -3,6 +3,9 @@
 
 void anagram(char* first,char* second){
   
+sort(first);
+sort(second);
+if(strcmp())
   
 }
 void main(){
