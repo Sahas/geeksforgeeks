@@ -5,10 +5,10 @@ typedef enum Boolean boolean;
 
 void trim(char* str){
     int i,j;
-    for(i=0;str[i]!='\0';i++){
-        if(str[i]==' '){
-            for(j=i;str[j]!='\0';j++)
-            str[j]=str[j+1];
+    for(i=0;*str[i]!='\0';i++){
+        if(*str[i]==' '){
+            for(j=i;*str[j]!='\0';j++)
+            *str[j]=*str[j+1];
         }
     }
 }
